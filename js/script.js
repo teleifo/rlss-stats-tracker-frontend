@@ -1,5 +1,5 @@
-// const baseURL = "https://rlss-stats-tracker-backend.vercel.app/";
-const baseURL = "http://localhost:5000";
+const baseURL = "https://rlss-stats-tracker-backend.vercel.app/";
+// const baseURL = "http://localhost:5000";
 
 $(document).ready(function () {
   $(document).on("change", "#player-select", function (e) {
