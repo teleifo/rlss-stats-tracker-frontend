@@ -1,0 +1,12 @@
+body>div {
+  box-shadow: none!important;
+  border: none!important;
+}
+
+#player-content {
+  margin-top: 20px;
+}
+
+#player-content>#player-table_wrapper div.dt-table {
+  overflow-x: auto;
+}

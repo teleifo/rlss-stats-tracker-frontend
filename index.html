@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rocket League Sideswipe Stats Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/datatables.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script src="/js/semantic.min.js"></script>
+  <script src="/js/datatables.min.js"></script>
+  <script src="/js/script.js"></script>
+</head>
+
+<body>
+  <div class="ui segment">
+    <div id="navbar" class="ui secondary tabular menu">
+      <a class="item active" data-tab="one">
+        Leaderboard
+      </a>
+      <a class="item" data-tab="two">
+        Players
+      </a>
+    </div>
+    <div id="leaderboard-tab" class="ui tab segment" data-tab="one">
+      <div id="leaderboard-form" class="ui loading form">
+        <div class="inline fields">
+          <div class="six wide field">
+            <select id="leaderboard-select" class="ui fluid search dropdown disabled">
+              <option value="">Player</option>
+            </select>
+          </div>
+          <div class="field">
+            <button id="leaderboard-form-button" class="ui right labeled icon button">
+              <i class="search icon"></i>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <table id="leaderboard-table" class="ui table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="player-tab" class="ui tab segment" data-tab="two">
+      <div id="player-form" class="ui loading form">
+        <div class="inline fields">
+          <div class="six wide field">
+            <select id="player-select" class="ui fluid search dropdown disabled">
+              <option value="">Player</option>
+            </select>
+          </div>
+          <div class="field">
+            <button id="player-form-button" class="ui right labeled icon button disabled">
+              <i class="search icon"></i>
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="player-content"></div>
+    </div>
+  </div>
+</body>
+
+</html>
