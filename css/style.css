@@ -3,10 +3,71 @@ body>div {
   border: none!important;
 }
 
-#player-content {
+#leaderboard-content, #player-content {
   margin-top: 20px;
 }
 
+#leaderboard-content>#leaderboard-table_wrapper div.dt-table,
 #player-content>#player-table_wrapper div.dt-table {
   overflow-x: auto;
+}
+
+#leaderboard-table td:nth-child(1) {
+  width: 200px;
+  min-width: 100px;
+}
+
+#leaderboard-table td:nth-child(2) {
+  width: 300px;
+  min-width: 150px;
+}
+
+#leaderboard-table td:nth-child(3) {
+  min-width: 150px;
+}
+
+#player-table td:nth-child(1) {
+  width: 250px;
+  min-width: 150px;
+}
+
+#player-table td:nth-child(2) {
+  width: 150px;
+  min-width: 70px;
+}
+
+#player-table td:nth-child(3) {
+  width: 200px;
+  min-width: 100px;
+}
+
+#player-table td:nth-child(4) {
+  width: 150px;
+  min-width: 70px;
+}
+
+#player-table td:nth-child(5) {
+  width: 150px;
+  min-width: 70px;
+}
+
+#player-table td:nth-child(6) {
+  width: 150px;
+  min-width: 70px;
+}
+
+#player-table td:nth-child(7) {
+  min-width: 100px;
+}
+
+.gold {
+  background-color: #FFD700!important;
+}
+
+.silver {
+  background-color: #808080!important;
+}
+
+.bronze {
+  background-color: #CD7F32!important;
 }

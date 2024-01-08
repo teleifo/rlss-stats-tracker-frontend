@@ -26,44 +26,25 @@
     </div>
     <div id="leaderboard-tab" class="ui tab segment" data-tab="one">
       <div id="leaderboard-form" class="ui loading form">
-        <div class="inline fields">
+        <div class="fields">
           <div class="six wide field">
+            <label>Select a category</label>
             <select id="leaderboard-select" class="ui fluid search dropdown disabled">
-              <option value="">Player</option>
+              <option value="">Category</option>
             </select>
-          </div>
-          <div class="field">
-            <button id="leaderboard-form-button" class="ui right labeled icon button">
-              <i class="search icon"></i>
-              Search
-            </button>
           </div>
         </div>
       </div>
-      <table id="leaderboard-table" class="ui table">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Player</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+      <div id="leaderboard-content"></div>
     </div>
     <div id="player-tab" class="ui tab segment" data-tab="two">
       <div id="player-form" class="ui loading form">
-        <div class="inline fields">
+        <div class="fields">
           <div class="six wide field">
+            <label>Select a player</label>
             <select id="player-select" class="ui fluid search dropdown disabled">
               <option value="">Player</option>
             </select>
-          </div>
-          <div class="field">
-            <button id="player-form-button" class="ui right labeled icon button disabled">
-              <i class="search icon"></i>
-              Search
-            </button>
           </div>
         </div>
       </div>
